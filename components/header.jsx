@@ -18,8 +18,8 @@ export function Header() {
           {/* Left Side: Logo and Urdu Text */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src="/logo.png" width={50} height={50} alt="Logo" />
-              <span className="hidden font-bold sm:inline-block">
+              <Image src="/logos/logo.svg" width={50} height={50} alt="Logo" />
+              <span className="hidden font-semibold sm:inline-block text-xl">
                 مدرسہ عبداللہ بن مسعود
               </span>
             </Link>
@@ -27,7 +27,7 @@ export function Header() {
 
           {/* Center: Navlinks */}
           <div className="hidden md:flex items-center justify-center flex-1">
-            <nav className="flex items-center space-x-6 text-sm font-medium">
+            <nav className="flex items-center space-x-6 text-base font-medium -translate-x-12">
               <Link href="/" className="hover:text-green-300">
                 Home
               </Link>
