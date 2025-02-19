@@ -81,6 +81,7 @@ export default function Home() {
                   </p>
                 </CardContent>
               </Card>
+
               <Card>
                 <Image
                   src="/food.jpg"
@@ -99,6 +100,124 @@ export default function Home() {
                   </p>
                 </CardContent>
               </Card>
+
+              <Card>
+                <Image
+                  src="/medical.jpg"
+                  alt="Medical Camp"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+                <CardHeader>
+                  <CardTitle>Medical Camp</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Organizing free medical camps twice a year, serving over
+                    1000 patients.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <Image
+                  src="/construction.jpg"
+                  alt="Education"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+                <CardHeader>
+                  <CardTitle>Rebuilding Homes</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Reconstruction of homes destroyed by Indian shelling, led by
+                    Ibn Masood.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <video
+                  src="/distribution.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-48 object-cover"
+                />
+                <CardHeader>
+                  <CardTitle>Distributions</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Distribution of warm clothing and food rations to the needy
+                    by Ibn Masood, in the presence of local scholars.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <video
+                  src="/remote.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-48 object-cover"
+                />
+                <CardHeader>
+                  <CardTitle>Extending Relief to Remote Areas</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Ibn Masood is distributing food rations in the upper
+                    regions.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <Image
+                  src="/freezing.jpg"
+                  alt="Education"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+                <CardHeader>
+                  <CardTitle>Freezing Regions</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Ibn Masood is distributing warm clothing and blankets in the
+                    coldest upper regions.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <video
+                  src="/quran-education.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-48 object-cover"
+                />
+                <CardHeader>
+                  <CardTitle>Quranic Education in Remote Areas</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Providing essential Quranic education services in
+                    challenging and hard-to-reach regions.
+                  </p>
+                </CardContent>
+              </Card>
+
               <Card>
                 <Image
                   src="/medical.jpg"
