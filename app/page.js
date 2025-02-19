@@ -3,8 +3,17 @@ import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleNavigation = (path) => {
+    if (path) {
+      router.push(path);
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <div className="bg-green-800 text-white py-4">
@@ -37,7 +46,11 @@ export default function Home() {
               <p className="text-xl md:text-2xl mb-8">
                 Join us in building a brighter future for Pakistan.
               </p>
-              <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Button
+                onClick={() => handleNavigation("/donate-now")}
+                size="lg"
+                className="bg-green-600 hover:bg-green-700"
+              >
                 Help us
               </Button>
             </div>
@@ -279,7 +292,11 @@ export default function Home() {
                 Your generous donations help us continue our mission and expand
                 our services to those in need.
               </p>
-              <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Button
+                onClick={() => handleNavigation("/donate-now")}
+                size="lg"
+                className="bg-green-600 hover:bg-green-700"
+              >
                 Donate Now
               </Button>
             </div>

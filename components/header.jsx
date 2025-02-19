@@ -9,9 +9,17 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 
 import Logo from "../public/logos/logo.svg";
+import { useRouter } from "next/navigation";
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const router = useRouter();
+
+  const handleNavigation = (path) => {
+    if (path) {
+      router.push(path);
+    }
+  };
 
   return (
     <>
@@ -48,6 +56,7 @@ export function Header() {
           {/* Right Side: Donate Button */}
           <div className="flex items-center justify-end">
             <Button
+              onClick={() => handleNavigation("/donate-now")}
               variant="secondary"
               className="bg-green-600 hover:bg-green-700 text-white"
             >
