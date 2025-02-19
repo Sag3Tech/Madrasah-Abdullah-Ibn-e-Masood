@@ -8,6 +8,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
+import Logo from "../public/logos/logo.svg";
+
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -18,7 +20,7 @@ export function Header() {
           {/* Left Side: Logo and Urdu Text */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src="/logos/logo.svg" width={50} height={50} alt="Logo" />
+              <Image src={Logo} width={50} height={50} alt="Logo" />
               <span className="hidden font-semibold sm:inline-block text-xl">
                 مدرسہ عبداللہ بن مسعود
               </span>
